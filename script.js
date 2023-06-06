@@ -8,7 +8,14 @@ document.querySelector("#SideMenu").onclick = () => {
 // Click diluar sidebar
 const Menu = document.querySelector("#SideMenu");
 document.addEventListener("click", function (e) {
-  if (!Menu.contains(e.target) && !navbarNav.contains(e.target)) {
+  if (!Menu.contains(e.target)) {
     navbarNav.classList.remove("active");
   }
 });
+
+// const Menu = document.querySelector("#SideMenu");
+// document.addEventListener("click", function (e) {
+//   if (!Menu.contains(e.target) && !navbarNav.contains(e.target)) {
+//     navbarNav.classList.remove("active");
+//   }
+// });

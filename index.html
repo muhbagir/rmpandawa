@@ -1,0 +1,186 @@
+<!-- <?php
+  include 'koneksi.php';
+  if (isset($_POST['submit'])) {
+    $nama = mysqli_real_escape_string($koneksi, $_POST['nama']);
+    $email = mysqli_real_escape_string($koneksi, $_POST['email']);
+    $nomor = mysqli_real_escape_string($koneksi, $_POST['nomor']);
+    $saran = mysqli_real_escape_string($koneksi, $_POST['saran']);
+
+    mysqli_query($koneksi, "INSERT INTO datapelanggan VALUES('$nama','$email','$nomor','$saran')");
+
+    echo "<script>window.alert('Berhasil dikirim!')
+    window.location='index.php';</script>";
+  }
+
+  
+?> -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rumah Makan Pandawa</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feathers Icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navbar start -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo"><img src="IMG\sodapdf-converted.png" style="width: 100px; height: auto;" alt="Logo"></a>
+      <div class="navbar-nav">
+        <a href="#home">Home</a>
+        <a href="#about">Tentang</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Kontak</a>
+      </div>
+
+      <div class="navbar-extra">
+        <!-- <a href="#" id="search"><i data-feather="search"></i></a> -->
+        <a href="https://goo.gl/maps/5Ujm1sWeKWjSSU8Q9" id="Maps" target="_blank"><i data-feather="map-pin"></i></a>
+        <a href="#" id="SideMenu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+    <!-- Navbar end -->
+
+    <!-- Hero Section Start -->
+    <section class="hero" id="home">
+      <main class="content">
+        <h1>Nikmati menu <span>SPESIAL!</span></h1>
+        <p>Kami selalu menyajikan menu spesial mingguan untuk memenuhi rasa penasaran kamu. Cobain sekarang!</p>
+        <a href="https://forms.gle/KxXddxPDCZ6kmgr28" class="cta" target="_blank">Pesan Disini</a>
+      </main>
+    </section>
+    <!-- Hero Section End -->
+    <!-- Tentang Section Start-->
+    <section id="about" class="about">
+      <h2>Tentang <span>Kami</span></h2>
+
+      <div class="row">
+        <div class="about-img">
+          <img src="IMG\Logo in.png" alt="Tentang Kami">
+        </div>
+        <div class="content">
+          <h3>Mengapa Pandawa?</h3>
+          <p>Pandawa adalah sebuah rumah makan rumahan yang terletak di Jalan Kantil, No. 1B. Dengan konsep sederhana namun mengutamakan rasa dan kenyamanan pelanggan, Kami berharap bahwa setiap kunjungan pelanggan ke Pandawa akan memberikan kenangan yang menyenangkan dan membuat mereka kembali lagi. Nama Pandawa diambil dari tokoh pewayangan, mengacu pada keluarga Pandawa yang terdiri dari lima bersaudara, yang merepresentasikan kebersamaan dan kehangatan.</p>
+          <p>Kami berharap bahwa setiap kunjungan pelanggan ke Pandawa akan memberikan kenangan yang menyenangkan dan membuat mereka kembali lagi. Pandawa tidak hanya menjadi tempat untuk menikmati hidangan lezat, tetapi juga sebagai tempat untuk merayakan kebersamaan dan kehangatan bersama keluarga dan teman-teman terdekat.</p>
+        </div>
+      </div>
+    </section>
+    <!-- Tentang Section End -->
+
+    <!-- Menu Section Start -->
+    <section id="menu" class="menu">
+      <h2><span>Menu</span> Minggu Ini</h2>
+      <p>Dibawah ini merupakan menu yang tersedia pada minggu ini. Silahkan untuk menikmati sesuai dengan keinginan kamu!</p>
+      <div class="row">
+        <div class="menu-card">
+          <img src="img/Menu/Soto Bening.jpg" alt="Soto Bening" class="menu-card-img">
+          <h3 class="menu-card-title">- Soto Bening -</h3>
+          <p class="menu-card-price">IDR 12K</p>
+        </div>
+        <div class="menu-card">
+          <img src="img/Menu/Soto Bening.jpg" alt="Soto Bening" class="menu-card-img">
+          <h3 class="menu-card-title">- Soto Bening -</h3>
+          <p class="menu-card-price">IDR 12K</p>
+        </div>
+        <div class="menu-card">
+          <img src="img/Menu/Soto Bening.jpg" alt="Soto Bening" class="menu-card-img">
+          <h3 class="menu-card-title">- Soto Bening -</h3>
+          <p class="menu-card-price">IDR 12K</p>
+        </div>
+        <div class="menu-card">
+          <img src="img/Menu/Soto Bening.jpg" alt="Soto Bening" class="menu-card-img">
+          <h3 class="menu-card-title">- Soto Bening -</h3>
+          <p class="menu-card-price">IDR 12K</p>
+        </div>
+        <div class="menu-card">
+          <img src="img/Menu/Soto Bening.jpg" alt="Soto Bening" class="menu-card-img">
+          <h3 class="menu-card-title">- Soto Bening -</h3>
+          <p class="menu-card-price">IDR 12K</p>
+        </div>
+        <div class="menu-card">
+          <img src="img/Menu/Soto Bening.jpg" alt="Soto Bening" class="menu-card-img">
+          <h3 class="menu-card-title">- Soto Bening -</h3>
+          <p class="menu-card-price">IDR 12K</p>
+        </div>
+        <div class="menu-card">
+          <img src="img/Menu/Soto Bening.jpg" alt="Soto Bening" class="menu-card-img">
+          <h3 class="menu-card-title">- Soto Bening -</h3>
+          <p class="menu-card-price">IDR 12K</p>
+        </div>
+        <div class="menu-card">
+          <img src="img/Menu/Soto Bening.jpg" alt="Soto Bening" class="menu-card-img">
+          <h3 class="menu-card-title">- Soto Bening -</h3>
+          <p class="menu-card-price">IDR 12K</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Section End -->
+    <!-- Kontak Section Start -->
+    <section id="contact" class="contact">
+      <h2><span>Hubungi</span> Kami</h2>
+      <p>Puas dengan pelayanan kami? Silahkan tulis saran kamu, satu saran kamu sangat berarti bagi kami!</p>
+      <div class="row">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d247.18804534501697!2d110.7750955!3d-7.5740264!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a15c440f6955f%3A0x613f1ba15fa58761!2sPandawa%20Makanan%20Nusantara!5e0!3m2!1sid!2sid!4v1686026928775!5m2!1sid!2sid" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+        <form action="" method="post">
+          <div class="input-group">
+            <i data-feather="user"></i>
+            <input type="text" name="nama" required="required" placeholder="nama">
+          </div>
+          <div class="input-group">
+            <i data-feather="mail"></i>
+            <input type="text" name ="email" required="required" placeholder="email">
+          </div>
+          <div class="input-group">
+            <i data-feather="phone"></i>
+            <input type="text" name="nomor" required="required" placeholder="nomor">
+          </div>  
+          <div class="input-group">
+            <i data-feather="edit-3"></i>
+            <input type="text" name="saran" placeholder="saran">
+          </div>
+          <button type="submit" name="submit" class="btn">Kirim!</button>
+        </form>
+      </div>
+    </section>
+    <!-- Kontak Section End -->
+    <!-- Footer Start-->
+    <footer>
+      <div class="socials">
+        <a href="#"><i data-feather="instagram"></i></a>
+        <a href="https://wa.me//628121530458" target="_blank"><i data-feather="phone"></i></a>
+      </div>
+      <div class="links">
+        <a href="#home">Home</a>
+        <a href="#about">Tentang</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Kontak</a>
+      </div>
+      <div class="credit">
+        <p>Created by <a href="https://www.linkedin.com/in/muhbagir/" target="_blank">Muhammad Bagir</a> | &copy; 2023.</p>
+      </div>
+    </footer>
+    <!-- Footer End-->
+    <!-- Feathers Icon -->
+    <script>
+      feather.replace();
+    </script>
+    <!-- My JavaScript -->
+    <script src="script.js"></script>
+    </script>
+  </body>
+</html>
